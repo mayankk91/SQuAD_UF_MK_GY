@@ -18,6 +18,7 @@ for d in _data:
         questions = [q['question'] for q in par['qas']]
         data[-1].append((context, questions))
 
+# print(data)
 contextss = [""]
 context_questions = [[]]
 for i in range(len(data)):

@@ -101,7 +101,7 @@ flags.DEFINE_string("logit_func", "tri_linear", "logit func [tri_linear]")
 flags.DEFINE_bool("sh", False, "use superhighway [False]")
 flags.DEFINE_string("answer_func", "linear", "answer logit func [linear]")
 flags.DEFINE_bool("cluster", False, "Cluster data for faster training [False]")
-flags.DEFINE_bool("len_opt", True, "Length optimization? [False]")
+flags.DEFINE_bool("len_opt", False, "Length optimization? [False]")
 flags.DEFINE_bool("cpu_opt", True, "CPU optimization? GPU computation can be slower [False]")
 flags.DEFINE_string("sh_logit_func", "tri_linear", "sh logit func [tri_linear]")
 flags.DEFINE_bool("q2c_att", True, "question-to-context attention? [True]")
@@ -122,7 +122,7 @@ class Demo(object):
         config.out_dir = os.path.join(config.out_base_dir, config.model_name, str(config.run_id).zfill(2))
         config.max_sent_size = config.sent_size_th
         config.max_num_sents = config.num_sents_th
-        config.max_ques_size = config.ques_size_th
+        config.max_ques_size = 100
         config.max_word_size = config.word_size_th
         config.max_para_size = config.para_size_th
 
