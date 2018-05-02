@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+# SQuAD_UF_MK_GY
+
+## Question-Answering in Natural Language based on given Context.
+ 
+
+### Dynamic Memory Network
+
+TensorFlow Implementation of Dynamic Memory Network based on: 
+Ask Me Anything: Dynamic Memory Networks for Natural Language Processing
+(https://arxiv.org/abs/1506.07285)
+
+#### Requirements
+- TensorFlow 1.6
+- Python 3.6
+
+#### Data
+Reading Comprehension Dataset with Questions and Corresponding Answers - SQuAD (https://rajpurkar.github.io/SQuAD-explorer/)
+
+=======
 ####################################################################################################################
 This code has been used for a class project which combines the following two repositories under the MIT License:
 https://github.com/allenai/bi-att-flow (Dev Branch)
@@ -189,3 +209,4 @@ python -m basic.cli --num_gpus 3 --batch_size 20
 [minjoon-github]: https://github.com/seominjoon
 [v0.2.1]: https://github.com/allenai/bi-att-flow/tree/v0.2.1
 [v0.3.0]: https://github.com/allenai/bi-att-flow/releases/tag/v0.3.0
+>>>>>>> 80112443bd87e1deab9b091273d81d43ccf3fa6a

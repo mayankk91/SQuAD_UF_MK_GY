@@ -9,7 +9,7 @@ flags = tf.app.flags
 # Names and directories
 flags.DEFINE_string("model_name", "basic", "Model name [basic]")
 # flags.DEFINE_string("data_dir", "/home/mayank/big_data_course_assgn/bi-att-flow/basic/data/squad-aug", "Data dir [data/squad]")
-flags.DEFINE_string("data_dir", "/home/mayank/big_data_course_assgn/bi-att-flow/data-aug/squad-aug", "Data dir [data/squad]")
+flags.DEFINE_string("data_dir", "/Users/gauravyeole/Downloads/BigData/SQuAD_UF_MK_GY/data/squad", "Data dir [data/squad]")
 flags.DEFINE_string("run_id", "0", "Run ID [0]")
 flags.DEFINE_string("out_base_dir", "out", "out base dir [out]")
 flags.DEFINE_string("forward_name", "single", "Forward name [single]")
@@ -24,7 +24,7 @@ flags.DEFINE_string("device_type", "gpu", "device for computing gradients (paral
 flags.DEFINE_integer("num_gpus", 1, "num of gpus or cpus for computing gradients [1]")
 
 # Essential training and test options
-flags.DEFINE_string("mode", "test", "trains | test | forward [test]")
+flags.DEFINE_string("mode", "test", "trains | test | forward [test] | demo")
 flags.DEFINE_boolean("load", True, "load saved data? [True]")
 flags.DEFINE_bool("single", False, "supervise only the answer sentence? [False]")
 flags.DEFINE_boolean("debug", False, "Debugging mode? [False]")

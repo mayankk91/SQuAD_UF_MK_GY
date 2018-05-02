@@ -365,7 +365,7 @@ class Model(object):
         config = self.config
         N, M, JX, JQ, VW, VC, d, W = \
             config.batch_size, config.max_num_sents, config.max_sent_size, \
-            config.max_ques_size, config.word_vocab_size, config.char_vocab_size, config.hidden_size, config.max_word_size
+            100, config.word_vocab_size, config.char_vocab_size, config.hidden_size, config.max_word_size
         feed_dict = {}
 
         if config.len_opt:

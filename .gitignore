@@ -1,0 +1,13 @@
+#datafiles
+*.zip
+*.txt
+*.tar.gz
+
+#jupyter notebooks
+*.ipnyp
+
+#compiled python
+*.pyc
+
+SQuAD
+data
